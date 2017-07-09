@@ -12,7 +12,7 @@
 */
 
 $app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/deveo_api/')
+    realpath(__DIR__.'/../')
 );
 
 /*
