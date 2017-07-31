@@ -2,9 +2,9 @@
 
 namespace Api\V1\User\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use DeveoDK\LaravelApiAuthenticator\Models\Authenticable;
 
-class User extends Model
+class User extends Authenticable
 {
     //
 }
