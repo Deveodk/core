@@ -1,5 +1,5 @@
-# core
-Artistic api framework based on laravel &amp; larapi
+# CORE by Deveo
+Artistic api framework based on laravel & Esbenp`s larapi
 
 ## Installation
 

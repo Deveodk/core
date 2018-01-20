@@ -2,14 +2,13 @@
 
 namespace Infrastructure\Http;
 
+use DeveoDK\Core\Localize\Middleware\LocalizeMiddleware;
 use Illuminate\Auth\Middleware\Authorize;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode;
 use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
 use Illuminate\Foundation\Http\Middleware\ValidatePostSize;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Routing\Middleware\ThrottleRequests;
-use Infrastructure\Http\Middleware\Cors;
 use Infrastructure\Http\Middleware\TrimStrings;
 
 class Kernel extends HttpKernel
@@ -22,20 +21,20 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        CheckForMaintenanceMode::class,
         ValidatePostSize::class,
         TrimStrings::class,
         ConvertEmptyStringsToNull::class,
-        Cors::class,
+        LocalizeMiddleware::class
     ];
+
+    protected $middlewarePriority = [];
 
     /**
      * The application's route middleware groups.
      *
      * @var array
      */
-    protected $middlewareGroups = [
-    ];
+    protected $middlewareGroups = [];
 
     /**
      * The application's route middleware.
