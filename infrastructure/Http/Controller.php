@@ -1,6 +1,6 @@
 <?php
 
-namespace Infrastructure\Http\Controllers;
+namespace Infrastructure\Http;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use DeveoDK\Core\Manager\Controllers\Controller as BaseController;

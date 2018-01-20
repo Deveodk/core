@@ -2,7 +2,7 @@
 
 namespace Api\System\Controllers;
 
-use Infrastructure\Http\Controllers\Controller;
+use Infrastructure\Http\Controller;
 
 class SystemController extends Controller
 {
